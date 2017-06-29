@@ -22,7 +22,7 @@ public class InvoiceRepositoryL2Bean implements InvoiceRepositoryL2 {
     @EJB
     InvoiceRepositoryStateless invoiceRepositoryStateless;
 
-    @PersistenceContext(unitName = "postgres")
+    @PersistenceContext(unitName = "etkgrmmb")
     private EntityManager entityManager;
 
 

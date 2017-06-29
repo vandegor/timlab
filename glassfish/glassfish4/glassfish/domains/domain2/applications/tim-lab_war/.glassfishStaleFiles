@@ -1,0 +1,4 @@
+WEB-INF/
+WEB-INF/lib/
+WEB-INF/lib/hibernate-validator-5.4.1.Final.jar
+WEB-INF/lib/hibernate-ehcache-5.1.0.Final.jar

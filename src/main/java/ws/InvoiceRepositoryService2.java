@@ -28,7 +28,7 @@ public interface InvoiceRepositoryService2 {
 
     @WebMethod
     @WebResult
-    String showInvoice(
+        String showInvoice(
             @WebParam(name = "invoiceId") int invoiceId
     ) throws BadRequestException, ConflictException;
 

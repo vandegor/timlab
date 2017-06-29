@@ -18,7 +18,7 @@ import java.math.MathContext;
 @Stateless
 public class InvoiceRepositoryStatelessBean implements InvoiceRepositoryStateless {
 
-    @PersistenceContext(unitName = "postgres")
+    @PersistenceContext(unitName = "etkgrmmb")
     private EntityManager entityManager;
 
 
@@ -99,7 +99,7 @@ public class InvoiceRepositoryStatelessBean implements InvoiceRepositoryStateles
     }
 
     private <T> T getReferanceThrowIfNull(Class<T> clazz, Pair entry) throws BadRequestException {
-        T t = entityManager.getReference (clazz, entry.getValue ());
+        T t = entityManager.find (clazz, entry.getValue ());
         if (t == null)
             throw new BadRequestException ("cannot find " + clazz.getName () + " by " + entry.getKey ().toString () + ": " + entry.getValue ().toString ());
         return t;

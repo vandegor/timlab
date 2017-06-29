@@ -1,0 +1,49 @@
+/* AUTOMATICALLY GENERATED ON Thu Jun 29 17:27:11 CEST 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL2Bean", "createInvoice,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "showInvoice,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "addProduct,Local,int,java.lang.String,double,double,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "removeProduct,Local,int,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "closeInvoice,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService1WS", "getProduct,ServiceEndpoint,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL1Bean", "addProduct,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "closeInvoice,ServiceEndpoint,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "addProductToInvoice,Local,int,model.Product,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL2Bean", "showInvoice,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL2Bean", "removeProduct,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService1WS", "createProduct,ServiceEndpoint,java.lang.String,double,double";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL2Bean", "addUser,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL1Bean", "closeInvoice,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "showInvoice,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "createInvoice,ServiceEndpoint,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL1Bean", "showInvoice,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "createInvoice,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "addProductToInvoice,Local,int,int,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "getProduct,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL2Bean", "closeInvoice,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService1WS", "addUser,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService1WS", "addUser,ServiceEndpoint,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL1Bean", "removeProduct,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "createProduct,Local,java.lang.String,double,double";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "removeProduct,Local,int,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryL2Bean", "addProduct,Local,helper.ParamHelper";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "showInvoice,ServiceEndpoint,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryStatelessBean", "addUser,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "removeProduct,ServiceEndpoint,int,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "addProductToInvoice,ServiceEndpoint,int,int,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "closeInvoice,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService1WS", "createProduct,Local,java.lang.String,double,double";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService1WS", "getProduct,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "InvoiceRepositoryService2WS", "createInvoice,Local,int";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "InvoiceRepositoryStatelessBean", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "InvoiceRepositoryL2Bean", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "InvoiceRepositoryL1Bean", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "InvoiceRepositoryService1WS", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "InvoiceRepositoryService2WS", "**";
+};
+
